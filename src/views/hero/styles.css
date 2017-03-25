@@ -1,0 +1,17 @@
+.heroApp{
+	background: url(../img/hero.jpeg);
+	background-size: cover;
+	background-position: center;
+	height: 70vh;
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		background: url('../img/pttr.png'), linear-gradient(to bottom, color(#212121 alpha(30%)) 0%,color(#212121 alpha(3%)) 50%,color(#212121 alpha(0%)));
+		background-size: 5px;
+	}
+}

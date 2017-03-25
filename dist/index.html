@@ -1,0 +1,158 @@
+<!DOCTYPE hyml>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <title>Hola Pug</title>
+    <link rel="stylesheet" type="text/css" href="./css/app.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet"/>
+  </head>
+  <body>
+    <header class="headerApp">
+      <div class="headerApp-wrapper wrapper">
+        <picture class="headerApp-logo">
+          <source srcset="./img/truekes-1x.png 1x, ./img/truekes-2x.png 2x" height="50"/><img class="logo" src="./img/truekes-1x.png" alt="truekes.com.sv"/>
+        </picture>
+        <div class="headerApp-search">
+          <input class="textInput" type="text" placeholder="Que quieres encontrar?"/>
+          <button class="btn blue circle"><span><i class="icon-search"></i></span></button>
+        </div>
+        <nav class="headerApp-nav">
+          <ul class="menu">
+            <div class="box-notif" id="messages-box">
+              <div class="box-notif-content">
+                <div class="box-notif-header"><a class="btnNew" href="#">+ Nuevo mensaje</a></div>
+                <div class="box-notif-body">
+                  <div class="box-notif-item new">
+                    <div class="user-photo online">
+                      <figure class="photo"><img src="https://randomuser.me/api/portraits/women/96.jpg" height="50"/></figure>
+                    </div>
+                    <div class="notif-copy">
+                      <div class="user-name">Ronald Mejia</div>
+                      <div class="notif-text">Este es un mensaje de prueba Este es un mensaje de prueba</div>
+                      <div class="notif-fotter">Hace 2 horas</div>
+                    </div>
+                  </div>
+                  <div class="box-notif-item">
+                    <div class="user-photo online">
+                      <figure class="photo"><img src="https://scontent-mia1-1.xx.fbcdn.net/v/t1.0-9/17103771_1227292360659910_2092824528560072875_n.jpg?oh=7c96f4d2a2c63da2dd2b005698d2eabe&amp;oe=59647EBD"/></figure>
+                    </div>
+                    <div class="notif-copy">
+                      <div class="user-name">David Castro</div>
+                      <div class="notif-text">Este mensaje de prueba</div>
+                      <div class="notif-fotter">Hace 5 horas</div>
+                    </div>
+                  </div>
+                  <div class="box-notif-item">
+                    <div class="user-photo online">
+                      <figure class="photo"><img src="https://scontent-mia1-1.xx.fbcdn.net/v/t1.0-9/17103771_1227292360659910_2092824528560072875_n.jpg?oh=7c96f4d2a2c63da2dd2b005698d2eabe&amp;oe=59647EBD"/></figure>
+                    </div>
+                    <div class="notif-copy">
+                      <div class="user-name">David Castro</div>
+                      <div class="notif-text">Este mensaje de prueba</div>
+                      <div class="notif-fotter">Hace 5 horas</div>
+                    </div>
+                  </div>
+                  <div class="box-notif-item">
+                    <div class="user-photo online">
+                      <figure class="photo"><img src="https://scontent-mia1-1.xx.fbcdn.net/v/t1.0-9/17103771_1227292360659910_2092824528560072875_n.jpg?oh=7c96f4d2a2c63da2dd2b005698d2eabe&amp;oe=59647EBD"/></figure>
+                    </div>
+                    <div class="notif-copy">
+                      <div class="user-name">David Castro</div>
+                      <div class="notif-text">Este mensaje de prueba</div>
+                      <div class="notif-fotter">Hace 5 horas</div>
+                    </div>
+                  </div>
+                  <div class="box-notif-item">
+                    <div class="user-photo">
+                      <figure class="photo"><img src="https://scontent-mia1-1.xx.fbcdn.net/v/t1.0-9/17103771_1227292360659910_2092824528560072875_n.jpg?oh=7c96f4d2a2c63da2dd2b005698d2eabe&amp;oe=59647EBD"/></figure>
+                    </div>
+                    <div class="notif-copy">
+                      <div class="user-name">David Castro</div>
+                      <div class="notif-text">Este mensaje de prueba</div>
+                      <div class="notif-fotter">Hace 5 horas</div>
+                    </div>
+                  </div>
+                  <div class="box-notif-item">
+                    <div class="user-photo online">
+                      <figure class="photo"><img src="https://scontent-mia1-1.xx.fbcdn.net/v/t1.0-9/14925300_218258575261770_743562442535162255_n.png?oh=8d97b89a401ae8d138cf461b4805ea2b&amp;oe=595DAF85"/></figure>
+                    </div>
+                    <div class="notif-copy">
+                      <div class="user-name">Hoseki El Salvador</div>
+                      <div class="notif-text">Este es un mensaje de prueba Este es un mensaje de prueba</div>
+                      <div class="notif-fotter">Ayer</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="box-notif-footer"><a href="#">Abrir centro de Mensajes</a></div>
+              </div>
+            </div>
+            <div class="box-notif active" id="notifications-box">
+              <div class="box-notif-content">
+                <div class="box-notif-header"><a class="btnNew" href="#">Configuracion</a></div>
+                <div class="box-notif-body">
+                  <div class="box-notif-item new">
+                    <div class="user-photo online">
+                      <figure class="photo"><img src="https://randomuser.me/api/portraits/women/96.jpg" height="50"/></figure>
+                    </div>
+                    <div class="notif-copy">
+                      <div class="user-name">A Ronald Mejia</div>
+                      <div class="notif-text">Le gusta uno de tus productos</div>
+                      <div class="notif-fotter"> <span class="like icon-like"></span><span>Hace 2 horas</span></div>
+                    </div>
+                  </div>
+                  <div class="box-notif-item">
+                    <div class="user-photo online">
+                      <figure class="photo"><img src="https://scontent-mia1-1.xx.fbcdn.net/v/t1.0-9/17103771_1227292360659910_2092824528560072875_n.jpg?oh=7c96f4d2a2c63da2dd2b005698d2eabe&amp;oe=59647EBD"/></figure>
+                    </div>
+                    <div class="notif-copy">
+                      <div class="user-name">A David Castro</div>
+                      <div class="notif-text">No le gusta uno de tus productos</div>
+                      <div class="notif-fotter"><span class="dislike icon-dislike"></span><span>Hace 5 horas</span></div>
+                    </div>
+                  </div>
+                  <div class="box-notif-item">
+                    <div class="user-photo online">
+                      <figure class="photo"><img src="https://scontent-mia1-1.xx.fbcdn.net/v/t1.0-9/17103771_1227292360659910_2092824528560072875_n.jpg?oh=7c96f4d2a2c63da2dd2b005698d2eabe&amp;oe=59647EBD"/></figure>
+                    </div>
+                    <div class="notif-copy">
+                      <div class="user-name">David Castro</div>
+                      <div class="notif-text">Este mensaje de prueba</div>
+                      <div class="notif-fotter"> <span class="follow icon-add"></span><span>Hace 5 horas</span></div>
+                    </div>
+                  </div>
+                  <div class="box-notif-item">
+                    <div class="user-photo online">
+                      <figure class="photo"><img src="https://scontent-mia1-1.xx.fbcdn.net/v/t1.0-9/17103771_1227292360659910_2092824528560072875_n.jpg?oh=7c96f4d2a2c63da2dd2b005698d2eabe&amp;oe=59647EBD"/></figure>
+                    </div>
+                    <div class="notif-copy">
+                      <div class="user-name">David Castro</div>
+                      <div class="notif-text">Este mensaje de prueba</div>
+                      <div class="notif-fotter"> <span class="start icon-start"></span><span>Hace 5 horas</span></div>
+                    </div>
+                  </div>
+                  <div class="box-notif-item">
+                    <div class="user-photo">
+                      <figure class="photo"><img src="https://scontent-mia1-1.xx.fbcdn.net/v/t1.0-9/14925300_218258575261770_743562442535162255_n.png?oh=8d97b89a401ae8d138cf461b4805ea2b&amp;oe=595DAF85"/></figure>
+                    </div>
+                    <div class="notif-copy">
+                      <div class="user-name">David Castro</div>
+                      <div class="notif-text">Este mensaje de prueba</div>
+                      <div class="notif-fotter"> <span class="post icon-post"></span><span>Hace 5 horas</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="box-notif-footer"><a href="#">Ver todas</a></div>
+              </div>
+            </div>
+            <li class="menu-item"><a class="btn circle blue" href="#"><span>Publicar <i class="icon-post"></i></span></a></li>
+            <li class="menu-item"> <a class="menu-link" href="#"><span class="icon icon-chat"></span><span class="menu-notif new">2</span></a></li>
+            <li class="menu-item"><a class="menu-link active" href="#"><span class="icon icon-bell"></span><span class="menu-notif new">+20</span></a></li>
+            <li class="menu-item"><a class="menu-link" href="#"><span class="icon icon-user"></span></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="heroApp"></section>
+    <script type="tetx/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  </body>
+</html>

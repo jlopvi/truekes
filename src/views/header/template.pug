@@ -1,0 +1,142 @@
+header.headerApp
+	div.headerApp-wrapper.wrapper
+		picture.headerApp-logo
+			source(srcset="./img/truekes-1x.png 1x, ./img/truekes-2x.png 2x" height="50")
+			img.logo(src="./img/truekes-1x.png" alt="truekes.com.sv")
+		div.headerApp-search
+			input.textInput(type="text" placeholder="Que quieres encontrar?")
+			button.btn.blue.circle: span: i.icon-search
+		nav.headerApp-nav
+			ul.menu
+				div#messages-box.box-notif
+					div.box-notif-content
+						div.box-notif-header
+							a.btnNew(href="#") + Nuevo mensaje
+						div.box-notif-body
+							div.box-notif-item.new
+								div.user-photo.online
+									figure.photo
+										img(src="https://randomuser.me/api/portraits/women/96.jpg" height="50")
+								div.notif-copy
+									div.user-name Ronald Mejia
+									div.notif-text Este es un mensaje de prueba Este es un mensaje de prueba
+									div.notif-fotter Hace 2 horas
+							div.box-notif-item
+								div.user-photo.online
+									figure.photo
+										img(src="https://scontent-mia1-1.xx.fbcdn.net/v/t1.0-9/17103771_1227292360659910_2092824528560072875_n.jpg?oh=7c96f4d2a2c63da2dd2b005698d2eabe&oe=59647EBD")
+								div.notif-copy
+									div.user-name David Castro
+									div.notif-text Este mensaje de prueba
+									div.notif-fotter Hace 5 horas
+							div.box-notif-item
+								div.user-photo.online
+									figure.photo
+										img(src="https://scontent-mia1-1.xx.fbcdn.net/v/t1.0-9/17103771_1227292360659910_2092824528560072875_n.jpg?oh=7c96f4d2a2c63da2dd2b005698d2eabe&oe=59647EBD")
+								div.notif-copy
+									div.user-name David Castro
+									div.notif-text Este mensaje de prueba
+									div.notif-fotter Hace 5 horas
+							div.box-notif-item
+								div.user-photo.online
+									figure.photo
+										img(src="https://scontent-mia1-1.xx.fbcdn.net/v/t1.0-9/17103771_1227292360659910_2092824528560072875_n.jpg?oh=7c96f4d2a2c63da2dd2b005698d2eabe&oe=59647EBD")
+								div.notif-copy
+									div.user-name David Castro
+									div.notif-text Este mensaje de prueba
+									div.notif-fotter Hace 5 horas
+							div.box-notif-item
+								div.user-photo
+									figure.photo
+										img(src="https://scontent-mia1-1.xx.fbcdn.net/v/t1.0-9/17103771_1227292360659910_2092824528560072875_n.jpg?oh=7c96f4d2a2c63da2dd2b005698d2eabe&oe=59647EBD")
+								div.notif-copy
+									div.user-name David Castro
+									div.notif-text Este mensaje de prueba
+									div.notif-fotter Hace 5 horas
+							div.box-notif-item
+								div.user-photo.online
+									figure.photo
+										img(src="https://scontent-mia1-1.xx.fbcdn.net/v/t1.0-9/14925300_218258575261770_743562442535162255_n.png?oh=8d97b89a401ae8d138cf461b4805ea2b&oe=595DAF85")
+								div.notif-copy
+									div.user-name Hoseki El Salvador
+									div.notif-text Este es un mensaje de prueba Este es un mensaje de prueba
+									div.notif-fotter Ayer
+						div.box-notif-footer
+							a(href="#") Abrir centro de Mensajes
+				div#notifications-box.box-notif.active
+					div.box-notif-content
+						div.box-notif-header
+							a.btnNew(href="#") Configuracion
+						div.box-notif-body
+							div.box-notif-item.new
+								div.user-photo.online
+									figure.photo
+										img(src="https://randomuser.me/api/portraits/women/96.jpg" height="50")
+								div.notif-copy
+									div.user-name A Ronald Mejia
+									div.notif-text Le gusta uno de tus productos
+									div.notif-fotter 
+										span.like.icon-like
+										span Hace 2 horas
+							div.box-notif-item
+								div.user-photo.online
+									figure.photo
+										img(src="https://scontent-mia1-1.xx.fbcdn.net/v/t1.0-9/17103771_1227292360659910_2092824528560072875_n.jpg?oh=7c96f4d2a2c63da2dd2b005698d2eabe&oe=59647EBD")
+								div.notif-copy
+									div.user-name A David Castro
+									div.notif-text No le gusta uno de tus productos
+									div.notif-fotter
+										span.dislike.icon-dislike
+										span Hace 5 horas
+							div.box-notif-item
+								div.user-photo.online
+									figure.photo
+										img(src="https://scontent-mia1-1.xx.fbcdn.net/v/t1.0-9/17103771_1227292360659910_2092824528560072875_n.jpg?oh=7c96f4d2a2c63da2dd2b005698d2eabe&oe=59647EBD")
+								div.notif-copy
+									div.user-name David Castro
+									div.notif-text Este mensaje de prueba
+									div.notif-fotter 
+										span.follow.icon-add
+										span Hace 5 horas
+							div.box-notif-item
+								div.user-photo.online
+									figure.photo
+										img(src="https://scontent-mia1-1.xx.fbcdn.net/v/t1.0-9/17103771_1227292360659910_2092824528560072875_n.jpg?oh=7c96f4d2a2c63da2dd2b005698d2eabe&oe=59647EBD")
+								div.notif-copy
+									div.user-name David Castro
+									div.notif-text Este mensaje de prueba
+									div.notif-fotter 
+										span.start.icon-start
+										span Hace 5 horas
+							div.box-notif-item
+								div.user-photo
+									figure.photo
+										img(src="https://scontent-mia1-1.xx.fbcdn.net/v/t1.0-9/14925300_218258575261770_743562442535162255_n.png?oh=8d97b89a401ae8d138cf461b4805ea2b&oe=595DAF85")
+								div.notif-copy
+									div.user-name David Castro
+									div.notif-text Este mensaje de prueba
+									div.notif-fotter 
+										span.post.icon-post
+										span Hace 5 horas
+						div.box-notif-footer
+							a(href="#") Ver todas
+				
+						
+				li.menu-item
+					a.btn.circle.blue(href="#")
+						span Publicar 
+							i.icon-post
+				li.menu-item 
+					a.menu-link(href="#")
+						span.icon.icon-chat
+						span.menu-notif.new 2
+					
+					
+				li.menu-item
+					a.menu-link.active(href="#")
+						span.icon.icon-bell
+						span.menu-notif.new +20
+				li.menu-item
+					a.menu-link(href="#")
+						span.icon.icon-user
+				

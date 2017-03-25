@@ -1,0 +1,215 @@
+
+@define-mixin buttons $name, $bg , $color: -1{
+
+	&.$(name){
+		background: $bg;
+		box-shadow: inset 0 0 0 1px color($bg blackness(10%)), inset 0px 0px color($bg blackness(50%));
+
+		@if $color == -1 {
+			color: white;
+		}
+		@else{
+			color: color($bg blackness(80%));
+		}
+		&:hover{
+			box-shadow: inset 0 0 0 1px color($bg blackness(10%)), inset 0px -40px color($bg blackness(50%));
+			color: color($bg lightness(90%));
+		}
+		&:active{
+			box-shadow: inset 0 0 0 3px $bg, inset 0px -40px color($bg blackness(50%));
+			color: color($bg lightness(90%));
+		}
+	}
+
+}
+@define-mixin buttonsCircle $name, $bg , $color: -1{
+
+	&.$(name){
+		background: $bg;
+		@if $color == -1 {
+			color: white;
+		}
+		@else{
+			color: color($bg blackness(40%));
+		}
+		&:after{
+			background: color($bg blackness(40%));
+			@if $color == -1 {
+				box-shadow:  0 0 0 0 rgba(255,255,255,0.7),
+				inset 0 0 0 40px rgba(255,255,255,0);
+			}
+			@else{
+				box-shadow:  0 0 0 0 color( $bg blackness(80%) alpha(70%)),
+				inset 0 0 0 40px color( $bg blackness(80%) alpha(50%));
+			}
+			transition: .3s;
+
+		}
+		&:hover{
+			background: color($bg blackness(40%));
+			color: color($bg lightness(90%));
+			box-shadow: none;
+			&:after{
+				@if $color == -1 {
+					box-shadow:  0 0 0 10px rgba(255,255,255,0),
+					inset 0 0 0 0 rgba(255,255,255,0.7);
+				}
+				@else{
+					box-shadow:  0 0 0 10px color( $bg blackness(50%) alpha(0%)),
+					inset 0 0 0 0 color( $bg blackness(50%) alpha(30%));
+				}
+			}
+		}
+	}
+
+}
+
+.btn{
+	padding: 0 10px;
+	background: #ecf0f1;
+	box-shadow: inset 0 0 0 1px #bdc3c7, inset 0px 0px #95a5a6;
+	border: none;
+	height: 30px;
+	color: #95a5a6;
+	line-height: 30px;
+	transition: .3s;
+	display: inline-block;
+	user-select: none;
+	text-decoration: none;
+	&:hover{
+		box-shadow: inset 0 0 0 1px #bdc3c7, inset 0px -30px #95a5a6;
+		color: #ecf0f1;
+	}
+	&:active{
+		box-shadow: inset 0 0 0 5px #bdc3c7, inset 0px -30px #95a5a6;
+		color: #ecf0f1;
+		outline: none;
+	}
+	&:focus{
+		outline: none;
+	}
+	&.circle{
+		background: inherit;
+		position: relative;
+		overflow: hidden;
+		transition: background .4s;
+		span{
+			position: relative;
+			z-index: 1;
+		}
+		&:after{
+			content: '';
+			background: #95a5a6;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 0;
+			height: 0;
+			border-radius: 50%;
+			z-index: 0;
+			box-shadow:  0 0 0 0 rgba(255,255,255,0.7), inset 0 0 0 40px rgba(255,255,255,0.7);
+			transition: .3s;
+
+		}
+		&:hover{
+			background: #95a5a6;
+			box-shadow: none;
+			color: white;
+			&:after{
+				width:100px;
+				height: 100px;
+				margin-top: -50px;
+				margin-left: -50px;
+				box-shadow:  0 0 0 10px rgba(255,255,255,0), inset 0 0 0 0 rgba(255,255,255,0);
+			}
+		}
+		@mixin buttonsCircle red, #e74c3c{
+		}
+		@mixin buttonsCircle blue, #2980b9{
+		}
+		@mixin buttonsCircle green, #27ae60{
+		}
+		@mixin buttonsCircle yellow, #f39c12{
+		}
+		@mixin buttonsCircle purple, #8e44ad{
+		}
+		@mixin buttonsCircle white, #ecf0f1, 2{
+		}
+		@mixin buttonsCircle black, #2c3e50{
+		}
+	}
+	@mixin buttons red, #e74c3c{
+	}
+	@mixin buttons blue, #2980b9{
+	}
+	@mixin buttons green, #27ae60{
+	}
+	@mixin buttons yellow, #f39c12{
+	}
+	@mixin buttons purple, #8e44ad{
+	}
+	@mixin buttons white, #ecf0f1, 2{
+	}
+	@mixin buttons black, #2c3e50{
+	}
+	/*\\\\\\\\\FONT STYLE\\\\\\\\\\\\\\*/
+	&.uppercase{
+		text-transform: uppercase;
+	}
+	&.lowercase{
+		text-transform: lowercase;
+	}
+	&.capitalize{
+		text-transform: capitalize;
+	}
+	&.bold{
+		font-weight: bold;
+	}
+	&.lighter{
+		font-weight: lighter;
+	}
+	/*///////////SIZE///////////////*/
+	&.w-small{
+		width: 150px;
+	}
+	&.w-medium{
+		width: 200px;
+	}
+	&.w-large{
+		width: 250px;
+	}
+	&.w-100{
+		width: 100%;
+	}
+	&.w-50{
+		width: 50%;
+	}
+	&.w-25{
+		width: 25%;
+	}
+	&.w-15{
+		width: 15%;
+	}
+	&.w-7{
+		width: 7%;
+	}
+	&.h-small{
+		height: 30px;
+		line-height: 30px;
+	}
+	&.h-medium{
+		height: 35px;
+		line-height: 35px;
+	}
+	&.h-large{
+		height: 40px;
+		line-height: 40px;
+	}
+
+}
+.mt10{
+	margin-top: 10px
+}
+.center{
+	text-align: center;
+}

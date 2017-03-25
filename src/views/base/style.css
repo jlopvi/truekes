@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'truekesfont';
+  src:  url('../fonts/truekesfont.eot?79mkwy');
+  src:  url('../fonts/truekesfont.eot?79mkwy#iefix') format('embedded-opentype'),
+    url('../fonts/truekesfont.ttf?79mkwy') format('truetype'),
+    url('../fonts/truekesfont.woff?79mkwy') format('woff'),
+    url('../fonts/truekesfont.svg?79mkwy#truekesfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'truekesfont' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-post:before {
+  content: "\f100";
+}
+.icon-config:before {
+  content: "\f109";
+}
+.icon-exit:before {
+  content: "\f107";
+}
+.icon-start:before {
+  content: "\f10a";
+}
+.icon-search:before {
+  content: "\f10c";
+}
+.icon-like:before {
+  content: "\f102";
+}
+.icon-money:before {
+  content: "\f104";
+}
+.icon-user:before {
+  content: "\f10b";
+}
+.icon-dislike:before {
+  content: "\f101";
+}
+.icon-bell:before {
+  content: "\f10d";
+}
+.icon-chat:before {
+  content: "\f10f";
+}
+.icon-card:before {
+  content: "\f106";
+}
+.icon-add:before {
+  content: "\f103";
+}
+.icon-wallet:before {
+  content: "\f105";
+}
+.icon-logout:before {
+  content: "\f108";
+}
+.icon-chat2:before {
+  content: "\f10e";
+}
