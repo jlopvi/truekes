@@ -8,7 +8,7 @@ header.headerApp
 			button.btn.blue.circle: span: i.icon-search
 		nav.headerApp-nav
 			ul.menu
-				div#messages-box.box-notif
+				div#messages-box.box.box-notif
 					div.box-notif-content
 						div.box-notif-header
 							a.btnNew(href="#") + Nuevo mensaje
@@ -63,7 +63,7 @@ header.headerApp
 									div.notif-fotter Ayer
 						div.box-notif-footer
 							a(href="#") Abrir centro de Mensajes
-				div#notifications-box.box-notif.active
+				div#notifications-box.box.box-notif
 					div.box-notif-content
 						div.box-notif-header
 							a.btnNew(href="#") Configuracion
@@ -120,23 +120,43 @@ header.headerApp
 										span Hace 5 horas
 						div.box-notif-footer
 							a(href="#") Ver todas
-				
+				div#userMenu.box.userMenu
+					ul.userMenu-body
+						li.userMenu-item
+							a.userMenu-link(href="#")
+								i.icon.icon-start
+								span Inicio 
+						li.userMenu-item
+							a.userMenu-link(href="#")
+								i.icon.icon-user
+								span Mi Cuenta 
+						li.userMenu-item
+							a.userMenu-link(href="#")
+								i.icon.icon-config
+								span Configuracion 
+						li.userMenu-item
+							a.userMenu-link(href="#")
+								i.icon.icon-exit
+								span Salir 
+						
 						
 				li.menu-item
 					a.btn.circle.blue(href="#")
 						span Publicar 
 							i.icon-post
 				li.menu-item 
-					a.menu-link(href="#")
+					a.menu-link.drop-box(href="#" data-box="messages-box")
 						span.icon.icon-chat
 						span.menu-notif.new 2
 					
 					
 				li.menu-item
-					a.menu-link.active(href="#")
+					a.menu-link.drop-box(href="#" data-box='notifications-box')
 						span.icon.icon-bell
 						span.menu-notif.new +20
 				li.menu-item
-					a.menu-link(href="#")
-						span.icon.icon-user
+					a.menu-user.drop-box(href="#" data-box="userMenu")
+						figure.photo
+							img(src="https://scontent-mia1-1.xx.fbcdn.net/v/t1.0-9/17103771_1227292360659910_2092824528560072875_n.jpg?oh=7c96f4d2a2c63da2dd2b005698d2eabe&oe=59647EBD" alt="nombre de usario")
+						span.user-name @userNick
 				

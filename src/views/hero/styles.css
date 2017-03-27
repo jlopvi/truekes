@@ -4,6 +4,7 @@
 	background-position: center;
 	height: 70vh;
 	position: relative;
+
 	&:before {
 		content: '';
 		position: absolute;
@@ -13,5 +14,88 @@
 		bottom: 0;
 		background: url('../img/pttr.png'), linear-gradient(to bottom, color(#212121 alpha(30%)) 0%,color(#212121 alpha(3%)) 50%,color(#212121 alpha(0%)));
 		background-size: 5px;
+		z-index: 1;
+	}
+	&-wrapper{
+		position: relative;
+		z-index: 2;
+		padding-top: 60px;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		box-sizing: border-box;
+		justify-content: center;
+	}
+	&-copy{
+		color: white;
+		text-align: center;
+		font-size: 4em;
+		text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+		font-weight: bold;
+	}
+	&-subCopy{
+		color: white;
+		text-align: center;
+		font-size: 2em;
+		text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+		.btn{
+			font-size: 1.2em;
+			height: 1.5em;
+			line-height: 1.5em;
+		}
+		.cut{
+			display: inline-block;
+			position: relative;
+			margin-bottom: 20px;
+			&:before,
+			&:after{
+				content:'';
+
+				width: 40px;
+				height: 2px;
+				position: absolute;
+				background: white;
+				left: 200%;
+				top: 50%;
+				box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+			}
+			&:before{
+				right: 200%;
+				left: auto;
+			}
+
+		}
+
+	}
+	&-search{
+		background:  transparent;
+		height: 40px;
+		border-bottom: 2px solid white;
+		display: flex;
+		padding-bottom: 10px;
+		max-width: 900px;
+		margin: 50px 0;
+		.input-search{
+			background: transparent;
+			height: 100%;
+			display: inline-block;
+			border: none;
+			width: 100%;
+			color: white;
+			font-size: 2.4em;
+			text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+			&:focus{
+				outline: none;
+			}
+		}
+		.button-search{
+			background: transparent;
+			color: white;
+			border: none;
+			font-size: 2em;
+		}
+
+
 	}
 }

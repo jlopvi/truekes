@@ -706,6 +706,60 @@ button{
 
 }
 
+.headerApp-nav .menu .userMenu{
+	position: absolute;
+	right: 0;
+	background: white;
+	top: 45px;
+	display: none;
+
+}
+
+.headerApp-nav .menu .userMenu.active{
+	display: block;
+
+}
+
+.headerApp-nav .menu .userMenu-body{
+	border: 1px solid #888888;
+	position: relative;
+	padding:0;
+
+}
+
+.headerApp-nav .menu .userMenu-body:after{
+	content: '';
+	border: 14px solid transparent;
+	border-bottom: 14px solid white;
+	position: absolute;
+	bottom: 100%;
+	right: 10%;
+
+}
+
+.headerApp-nav .menu .userMenu-link{
+	color: #212121;
+	line-height: 30px;
+	display: block;
+	text-decoration: none;
+	padding: 0 10px;
+	font-size: 12px;
+	-webkit-transition: background .3s;
+	transition: background .3s;
+
+}
+
+.headerApp-nav .menu .userMenu-link .icon{
+	margin-right: 5px;
+
+}
+
+.headerApp-nav .menu .userMenu-link:hover{
+	background: #0093E3;
+	color: white;
+
+}
+
 .headerApp-nav .menu .box-notif{
 	display: none;
 	position: absolute;
@@ -719,6 +773,8 @@ button{
 
 .headerApp-nav .menu .box-notif.active{
 	display: block;
+	-webkit-animation: 1s boxToggle ease;
+	animation: 1s boxToggle ease;
 
 }
 
@@ -846,6 +902,7 @@ button{
 
 .headerApp-nav .menu .box-notif-item .user-photo .photo img{
 	width: 44px;
+	height: 44px;
 	-o-object-fit: cover;
 	object-fit: cover;
 
@@ -960,6 +1017,41 @@ button{
 
 }
 
+.headerApp-nav .menu-user{
+	background: rgba(0, 0, 0, 0.5);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	text-decoration: none;
+	color: white;
+
+}
+
+.headerApp-nav .menu-user .photo{
+	margin: 0 10px 0 5px;
+	background: white;
+	border-radius: 50%;
+	width: 31px;
+	height: 31px;
+	border: 2px solid white;
+	overflow: hidden;
+
+}
+
+.headerApp-nav .menu-user .photo img{
+	width: 31px;
+	height: 31px;
+	-o-object-fit: cover;
+	object-fit: cover;
+	border-radius: 50%;
+	-webkit-animation: .5s newNotif ease;
+	animation: .5s newNotif ease;
+
+}
+
 .headerApp-nav .menu-link{
 	background: transparent;
 	display: inline-block;
@@ -1013,12 +1105,98 @@ button{
 	position: absolute;
 	top: -15%;
 	right: 10%;
+	box-shadow: 0 0 0 0 rgb(192, 57, 43);
+	-webkit-transition: .3s;
+	transition: .3s;
 	display: none;
 
 }
 
 .headerApp-nav .menu-notif.new{
 	display: block;
+	-webkit-animation: .5s newNotif ease;
+	animation: .5s newNotif ease;
+	box-shadow: 0 0 0 10px rgba(192, 57, 43, 0);
+
+}
+
+.box.active{}
+
+@-webkit-keyframes boxToggle {
+	0%{
+		height: 0vh;
+
+		overflow: hidden;
+	}
+	40%{
+		height: 25vh;
+
+	}
+	60%{
+		height: 20vh;
+	}
+	80%{
+		height: 25vh;
+	}
+	90%{
+		height: 22vh;
+	}
+
+
+	100%{
+		height: 25vh;
+
+	}
+}
+
+@keyframes boxToggle {
+	0%{
+		height: 0vh;
+
+		overflow: hidden;
+	}
+	40%{
+		height: 25vh;
+
+	}
+	60%{
+		height: 20vh;
+	}
+	80%{
+		height: 25vh;
+	}
+	90%{
+		height: 22vh;
+	}
+
+
+	100%{
+		height: 25vh;
+
+	}
+}
+
+@-webkit-keyframes newNotif {
+	0%{
+		-webkit-transform: scale(0);
+		        transform: scale(0);
+	}
+	100%{
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
+
+}
+
+@keyframes newNotif {
+	0%{
+		-webkit-transform: scale(0);
+		        transform: scale(0);
+	}
+	100%{
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
 
 }
 
@@ -1041,5 +1219,116 @@ button{
 	background: url('../img/pttr.png'), -webkit-linear-gradient(top, color(#212121 alpha(30%)) 0%,color(#212121 alpha(3%)) 50%,color(#212121 alpha(0%)));
 	background: url('../img/pttr.png'), linear-gradient(to bottom, rgba(33, 33, 33, 0.3) 0%,rgba(33, 33, 33, 0.03) 50%,rgba(33, 33, 33, 0));
 	background-size: 5px;
+	z-index: 1;
+
+}
+
+.heroApp-wrapper{
+	position: relative;
+	z-index: 2;
+	padding-top: 60px;
+	height: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	box-sizing: border-box;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+
+}
+
+.heroApp-copy{
+	color: white;
+	text-align: center;
+	font-size: 4em;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+	font-weight: bold;
+
+}
+
+.heroApp-subCopy{
+	color: white;
+	text-align: center;
+	font-size: 2em;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+
+}
+
+.heroApp-subCopy .btn{
+	font-size: 1.2em;
+	height: 1.5em;
+	line-height: 1.5em;
+
+}
+
+.heroApp-subCopy .cut{
+	display: inline-block;
+	position: relative;
+	margin-bottom: 20px;
+
+}
+
+.heroApp-subCopy .cut:before,
+			.heroApp-subCopy .cut:after{
+	content:'';
+	width: 40px;
+	height: 2px;
+	position: absolute;
+	background: white;
+	left: 200%;
+	top: 50%;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+
+}
+
+.heroApp-subCopy .cut:before{
+	right: 200%;
+	left: auto;
+
+}
+
+.heroApp-search{
+	background:  transparent;
+	height: 40px;
+	border-bottom: 2px solid white;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding-bottom: 10px;
+	max-width: 900px;
+	margin: 50px 0;
+
+}
+
+.heroApp-search .input-search{
+	background: transparent;
+	height: 100%;
+	display: inline-block;
+	border: none;
+	width: 100%;
+	color: white;
+	font-size: 2.4em;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+
+}
+
+.heroApp-search .input-search:focus{
+	outline: none;
+
+}
+
+.heroApp-search .button-search{
+	background: transparent;
+	color: white;
+	border: none;
+	font-size: 2em;
 
 }

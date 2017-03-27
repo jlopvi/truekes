@@ -13,7 +13,7 @@ const browserSync = require('browser-sync').create();
 gulp.task('pug',() => {
 	gulp.src('src/views/*.pug')
 		.pipe(pug({
-			pretty: false
+			pretty: true
 		}))
 		.pipe(gulp.dest('dist/'))
 });

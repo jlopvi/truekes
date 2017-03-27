@@ -18,7 +18,7 @@
         </div>
         <nav class="headerApp-nav">
           <ul class="menu">
-            <div class="box-notif" id="messages-box">
+            <div class="box box-notif" id="messages-box">
               <div class="box-notif-content">
                 <div class="box-notif-header"><a class="btnNew" href="#">+ Nuevo mensaje</a></div>
                 <div class="box-notif-body">
@@ -86,7 +86,7 @@
                 <div class="box-notif-footer"><a href="#">Abrir centro de Mensajes</a></div>
               </div>
             </div>
-            <div class="box-notif active" id="notifications-box">
+            <div class="box box-notif" id="notifications-box">
               <div class="box-notif-content">
                 <div class="box-notif-header"><a class="btnNew" href="#">Configuracion</a></div>
                 <div class="box-notif-body">
@@ -144,15 +144,38 @@
                 <div class="box-notif-footer"><a href="#">Ver todas</a></div>
               </div>
             </div>
+            <div class="box userMenu" id="userMenu">
+              <ul class="userMenu-body">
+                <li class="userMenu-item"><a class="userMenu-link" href="#"><i class="icon icon-start"></i><span>Inicio </span></a></li>
+                <li class="userMenu-item"><a class="userMenu-link" href="#"><i class="icon icon-user"></i><span>Mi Cuenta </span></a></li>
+                <li class="userMenu-item"><a class="userMenu-link" href="#"><i class="icon icon-config"></i><span>Configuracion </span></a></li>
+                <li class="userMenu-item"><a class="userMenu-link" href="#"><i class="icon icon-exit"></i><span>Salir </span></a></li>
+              </ul>
+            </div>
             <li class="menu-item"><a class="btn circle blue" href="#"><span>Publicar <i class="icon-post"></i></span></a></li>
-            <li class="menu-item"> <a class="menu-link" href="#"><span class="icon icon-chat"></span><span class="menu-notif new">2</span></a></li>
-            <li class="menu-item"><a class="menu-link active" href="#"><span class="icon icon-bell"></span><span class="menu-notif new">+20</span></a></li>
-            <li class="menu-item"><a class="menu-link" href="#"><span class="icon icon-user"></span></a></li>
+            <li class="menu-item"> <a class="menu-link drop-box" href="#" data-box="messages-box"><span class="icon icon-chat"></span><span class="menu-notif new">2</span></a></li>
+            <li class="menu-item"><a class="menu-link drop-box" href="#" data-box="notifications-box"><span class="icon icon-bell"></span><span class="menu-notif new">+20</span></a></li>
+            <li class="menu-item"><a class="menu-user drop-box" href="#" data-box="userMenu">
+                <figure class="photo"><img src="https://scontent-mia1-1.xx.fbcdn.net/v/t1.0-9/17103771_1227292360659910_2092824528560072875_n.jpg?oh=7c96f4d2a2c63da2dd2b005698d2eabe&amp;oe=59647EBD" alt="nombre de usario"/></figure><span class="user-name">@userNick</span></a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <section class="heroApp"></section>
-    <script type="tetx/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <section class="heroApp">
+      <div class="heroApp-wrapper wrapper">
+        <div class="heroApp-copy">Que quieres comprar?</div>
+        <div class="heroApp-search">
+          <input class="input-search"/>
+          <button class="button-search icon-search"></button>
+        </div>
+        <div class="heroApp-subCopy"> <span class="cut">o</span>
+          <div>
+            <button class="btn circle green"><span>Inicia Sesion</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>

@@ -42,6 +42,46 @@
 			display: flex;
 			list-style: none;
 			position: relative;
+			.userMenu{
+				position: absolute;
+				right: 0;
+				background: white;
+				top: 45px;
+				display: none;
+				&.active{
+					display: block;
+				}
+				&-body{
+					border: 1px solid #888888;
+					position: relative;
+					padding:0;
+					&:after{
+						content: '';
+						border: 14px solid transparent;
+						border-bottom: 14px solid white;
+						position: absolute;
+						bottom: 100%;
+						right: 10%;
+					}
+				}
+				&-link{
+					color: #212121;
+					line-height: 30px;
+					display: block;
+					text-decoration: none;
+					padding: 0 10px;
+					font-size: 12px;
+					transition: background .3s;
+					.icon{
+						margin-right: 5px;
+					}
+					&:hover{
+						background: #0093E3;
+						color: white;
+					}
+				}
+
+			}
 			.box-notif{
 				display: none;
 				position: absolute;
@@ -52,6 +92,7 @@
 				top: 45px;
 				&.active{
 					display: block;
+					animation: 1s boxToggle ease;
 				}
 				&-content{
 					background: white;
@@ -135,6 +176,7 @@
 							min-height: 44px;
 							img{
 								width: 44px;
+								height: 44px;
 								object-fit: cover;
 							}
 						}
@@ -224,6 +266,31 @@
 
 
 			}
+			&-user{
+				background: color( #000 alpha(50%));
+				display: flex;
+				align-items: center;
+				text-decoration: none;
+				color: white;
+				.photo{
+					margin: 0 10px 0 5px;
+					background: white;
+					border-radius: 50%;
+					width: 31px;
+					height: 31px;
+					border: 2px solid white;
+					overflow: hidden;
+					img{
+						width: 31px;
+						height: 31px;
+						object-fit: cover;
+						border-radius: 50%;
+						animation: .5s newNotif ease;
+
+
+					}
+				}
+			}
 			&-link{
 				background: transparent;
 				display: inline-block;
@@ -272,12 +339,59 @@
 				position: absolute;
 				top: -15%;
 				right: 10%;
+				box-shadow: 0 0 0 0 color( #c0392b alpha(100%));
+				transition: .3s;
 				display: none;
 				&.new{
 					display: block;
+					animation: .5s newNotif ease;
+					box-shadow: 0 0 0 10px color( #c0392b alpha(0%));
 				}
 
 			}
 		}
 	}
+}
+
+.box{
+	&.active{
+
+	}
+}
+
+@keyframes boxToggle {
+	0%{
+		height: 0vh;
+
+		overflow: hidden;
+	}
+	40%{
+		height: 25vh;
+
+	}
+	60%{
+		height: 20vh;
+	}
+	80%{
+		height: 25vh;
+	}
+	90%{
+		height: 22vh;
+	}
+
+
+	100%{
+		height: 25vh;
+
+	}
+}
+
+@keyframes newNotif {
+	0%{
+		transform: scale(0);
+	}
+	100%{
+		transform: scale(1);
+	}
+
 }
