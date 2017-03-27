@@ -1,11 +1,9 @@
-
 body{
 	background: #F0EFEC;
 	margin: 0;
 	padding: 0;
 	font-size: 16px;
 	font-family: 'Arimo', sans-serif;
-
 }
 
 .wrapper{
@@ -40,19 +38,16 @@ button{
 .btn:hover{
 	box-shadow: inset 0 0 0 1px #bdc3c7, inset 0px -30px #95a5a6;
 	color: #ecf0f1;
-
 }
 
 .btn:active{
 	box-shadow: inset 0 0 0 5px #bdc3c7, inset 0px -30px #95a5a6;
 	color: #ecf0f1;
 	outline: none;
-
 }
 
 .btn:focus{
 	outline: none;
-
 }
 
 .btn.circle{
@@ -61,13 +56,11 @@ button{
 	overflow: hidden;
 	-webkit-transition: background .4s;
 	transition: background .4s;
-
 }
 
 .btn.circle span{
 	position: relative;
 	z-index: 1;
-
 }
 
 .btn.circle:after{
@@ -83,14 +76,12 @@ button{
 	box-shadow:  0 0 0 0 rgba(255, 255, 255, .7), inset 0 0 0 40px rgba(255, 255, 255, .7);
 	-webkit-transition: .3s;
 	transition: .3s;
-
 }
 
 .btn.circle:hover{
 	background: #95a5a6;
 	box-shadow: none;
 	color: white;
-
 }
 
 .btn.circle:hover:after{
@@ -99,13 +90,11 @@ button{
 	margin-top: -50px;
 	margin-left: -50px;
 	box-shadow:  0 0 0 10px rgba(255, 255, 255, 0), inset 0 0 0 0 rgba(255, 255, 255, 0);
-
 }
 
 .btn.circle.red {
 	background: #e74c3c;
 	color: white;
-
 }
 
 .btn.circle.red:after {
@@ -114,26 +103,22 @@ button{
 				inset 0 0 0 40px rgba(255, 255, 255, 0);
 	-webkit-transition: .3s;
 	transition: .3s;
-
 }
 
 .btn.circle.red:hover {
 	background: rgb(153, 70, 61);
 	color: rgb(249, 214, 210);
 	box-shadow: none;
-
 }
 
 .btn.circle.red:hover:after {
 	box-shadow: 0 0 0 10px rgba(255, 255, 255, 0),
 					inset 0 0 0 0 rgba(255, 255, 255, .7);
-
 }
 
 .btn.circle.blue {
 	background: #2980b9;
 	color: white;
-
 }
 
 .btn.circle.blue:after {
@@ -142,26 +127,22 @@ button{
 				inset 0 0 0 40px rgba(255, 255, 255, 0);
 	-webkit-transition: .3s;
 	transition: .3s;
-
 }
 
 .btn.circle.blue:hover {
 	background: rgb(41, 108, 153);
 	color: rgb(213, 233, 246);
 	box-shadow: none;
-
 }
 
 .btn.circle.blue:hover:after {
 	box-shadow: 0 0 0 10px rgba(255, 255, 255, 0),
 					inset 0 0 0 0 rgba(255, 255, 255, .7);
-
 }
 
 .btn.circle.green {
 	background: #27ae60;
 	color: white;
-
 }
 
 .btn.circle.green:after {
@@ -170,26 +151,22 @@ button{
 				inset 0 0 0 40px rgba(255, 255, 255, 0);
 	-webkit-transition: .3s;
 	transition: .3s;
-
 }
 
 .btn.circle.green:hover {
 	background: rgb(38, 153, 86);
 	color: rgb(213, 246, 227);
 	box-shadow: none;
-
 }
 
 .btn.circle.green:hover:after {
 	box-shadow: 0 0 0 10px rgba(255, 255, 255, 0),
 					inset 0 0 0 0 rgba(255, 255, 255, .7);
-
 }
 
 .btn.circle.yellow {
 	background: #f39c12;
 	color: white;
-
 }
 
 .btn.circle.yellow:after {
@@ -198,26 +175,22 @@ button{
 				inset 0 0 0 40px rgba(255, 255, 255, 0);
 	-webkit-transition: .3s;
 	transition: .3s;
-
 }
 
 .btn.circle.yellow:hover {
 	background: rgb(153, 101, 18);
 	color: rgb(252, 235, 207);
 	box-shadow: none;
-
 }
 
 .btn.circle.yellow:hover:after {
 	box-shadow: 0 0 0 10px rgba(255, 255, 255, 0),
 					inset 0 0 0 0 rgba(255, 255, 255, .7);
-
 }
 
 .btn.circle.purple {
 	background: #8e44ad;
 	color: white;
-
 }
 
 .btn.circle.purple:after {
@@ -226,26 +199,22 @@ button{
 				inset 0 0 0 40px rgba(255, 255, 255, 0);
 	-webkit-transition: .3s;
 	transition: .3s;
-
 }
 
 .btn.circle.purple:hover {
 	background: rgb(128, 69, 153);
 	color: rgb(234, 218, 241);
 	box-shadow: none;
-
 }
 
 .btn.circle.purple:hover:after {
 	box-shadow: 0 0 0 10px rgba(255, 255, 255, 0),
 					inset 0 0 0 0 rgba(255, 255, 255, .7);
-
 }
 
 .btn.circle.white {
 	background: #ecf0f1;
 	color: rgb(178, 178, 178);
-
 }
 
 .btn.circle.white:after {
@@ -254,26 +223,22 @@ button{
 				inset 0 0 0 40px rgba(137, 137, 137, 0.5);
 	-webkit-transition: .3s;
 	transition: .3s;
-
 }
 
 .btn.circle.white:hover {
 	background: rgb(178, 178, 178);
 	color: rgb(226, 232, 233);
 	box-shadow: none;
-
 }
 
 .btn.circle.white:hover:after {
 	box-shadow: 0 0 0 10px rgba(166, 166, 166, 0),
 					inset 0 0 0 0 rgba(166, 166, 166, 0.3);
-
 }
 
 .btn.circle.black {
 	background: #2c3e50;
 	color: white;
-
 }
 
 .btn.circle.black:after {
@@ -282,240 +247,200 @@ button{
 				inset 0 0 0 40px rgba(255, 255, 255, 0);
 	-webkit-transition: .3s;
 	transition: .3s;
-
 }
 
 .btn.circle.black:hover {
 	background: rgb(43, 98, 153);
 	color: rgb(222, 230, 237);
 	box-shadow: none;
-
 }
 
 .btn.circle.black:hover:after {
 	box-shadow: 0 0 0 10px rgba(255, 255, 255, 0),
 					inset 0 0 0 0 rgba(255, 255, 255, .7);
-
 }
 
 .btn.red {
 	background: #e74c3c;
 	box-shadow: inset 0 0 0 1px rgb(230, 78, 61), inset 0px 0px rgb(128, 68, 61);
 	color: white;
-
 }
 
 .btn.red:hover {
 	box-shadow: inset 0 0 0 1px rgb(230, 78, 61), inset 0px -40px rgb(128, 68, 61);
 	color: rgb(249, 214, 210);
-
 }
 
 .btn.red:active {
 	box-shadow: inset 0 0 0 3px #e74c3c, inset 0px -40px rgb(128, 68, 61);
 	color: rgb(249, 214, 210);
-
 }
 
 .btn.blue {
 	background: #2980b9;
 	box-shadow: inset 0 0 0 1px rgb(41, 154, 230), inset 0px 0px rgb(41, 93, 128);
 	color: white;
-
 }
 
 .btn.blue:hover {
 	box-shadow: inset 0 0 0 1px rgb(41, 154, 230), inset 0px -40px rgb(41, 93, 128);
 	color: rgb(213, 233, 246);
-
 }
 
 .btn.blue:active {
 	box-shadow: inset 0 0 0 3px #2980b9, inset 0px -40px rgb(41, 93, 128);
 	color: rgb(213, 233, 246);
-
 }
 
 .btn.green {
 	background: #27ae60;
 	box-shadow: inset 0 0 0 1px rgb(38, 230, 118), inset 0px 0px rgb(38, 128, 75);
 	color: white;
-
 }
 
 .btn.green:hover {
 	box-shadow: inset 0 0 0 1px rgb(38, 230, 118), inset 0px -40px rgb(38, 128, 75);
 	color: rgb(213, 246, 227);
-
 }
 
 .btn.green:active {
 	box-shadow: inset 0 0 0 3px #27ae60, inset 0px -40px rgb(38, 128, 75);
 	color: rgb(213, 246, 227);
-
 }
 
 .btn.yellow {
 	background: #f39c12;
 	box-shadow: inset 0 0 0 1px rgb(230, 148, 18), inset 0px 0px rgb(128, 85, 18);
 	color: white;
-
 }
 
 .btn.yellow:hover {
 	box-shadow: inset 0 0 0 1px rgb(230, 148, 18), inset 0px -40px rgb(128, 85, 18);
 	color: rgb(252, 235, 207);
-
 }
 
 .btn.yellow:active {
 	box-shadow: inset 0 0 0 3px #f39c12, inset 0px -40px rgb(128, 85, 18);
 	color: rgb(252, 235, 207);
-
 }
 
 .btn.purple {
 	background: #8e44ad;
 	box-shadow: inset 0 0 0 1px rgb(181, 69, 230), inset 0px 0px rgb(110, 69, 128);
 	color: white;
-
 }
 
 .btn.purple:hover {
 	box-shadow: inset 0 0 0 1px rgb(181, 69, 230), inset 0px -40px rgb(110, 69, 128);
 	color: rgb(234, 218, 241);
-
 }
 
 .btn.purple:active {
 	box-shadow: inset 0 0 0 3px #8e44ad, inset 0px -40px rgb(110, 69, 128);
 	color: rgb(234, 218, 241);
-
 }
 
 .btn.white {
 	background: #ecf0f1;
 	box-shadow: inset 0 0 0 1px rgb(230, 230, 230), inset 0px 0px rgb(166, 166, 166);
 	color: rgb(137, 137, 137);
-
 }
 
 .btn.white:hover {
 	box-shadow: inset 0 0 0 1px rgb(230, 230, 230), inset 0px -40px rgb(166, 166, 166);
 	color: rgb(226, 232, 233);
-
 }
 
 .btn.white:active {
 	box-shadow: inset 0 0 0 3px #ecf0f1, inset 0px -40px rgb(166, 166, 166);
 	color: rgb(226, 232, 233);
-
 }
 
 .btn.black {
 	background: #2c3e50;
 	box-shadow: inset 0 0 0 1px rgb(43, 136, 230), inset 0px 0px rgb(43, 85, 128);
 	color: white;
-
 }
 
 .btn.black:hover {
 	box-shadow: inset 0 0 0 1px rgb(43, 136, 230), inset 0px -40px rgb(43, 85, 128);
 	color: rgb(222, 230, 237);
-
 }
 
 .btn.black:active {
 	box-shadow: inset 0 0 0 3px #2c3e50, inset 0px -40px rgb(43, 85, 128);
 	color: rgb(222, 230, 237);
-
 }
 
 /*\\\\\\\\\FONT STYLE\\\\\\\\\\\\\\*/
 
 .btn.uppercase{
 	text-transform: uppercase;
-
 }
 
 .btn.lowercase{
 	text-transform: lowercase;
-
 }
 
 .btn.capitalize{
 	text-transform: capitalize;
-
 }
 
 .btn.bold{
 	font-weight: bold;
-
 }
 
 .btn.lighter{
 	font-weight: lighter;
-
 }
 
 /*///////////SIZE///////////////*/
 
 .btn.w-small{
 	width: 150px;
-
 }
 
 .btn.w-medium{
 	width: 200px;
-
 }
 
 .btn.w-large{
 	width: 250px;
-
 }
 
 .btn.w-100{
 	width: 100%;
-
 }
 
 .btn.w-50{
 	width: 50%;
-
 }
 
 .btn.w-25{
 	width: 25%;
-
 }
 
 .btn.w-15{
 	width: 15%;
-
 }
 
 .btn.w-7{
 	width: 7%;
-
 }
 
 .btn.h-small{
 	height: 30px;
 	line-height: 30px;
-
 }
 
 .btn.h-medium{
 	height: 35px;
 	line-height: 35px;
-
 }
 
 .btn.h-large{
 	height: 40px;
 	line-height: 40px;
-
 }
 
 .mt10{
@@ -650,7 +575,6 @@ button{
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-
 }
 
 .headerApp-search{
@@ -663,7 +587,6 @@ button{
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-
 }
 
 .headerApp-search .textInput{
@@ -674,13 +597,11 @@ button{
 	font-size: 1.1em;
 	padding: 0 10px;
 	border: none;
-
 }
 
 .headerApp-search .btn{
 	height: 35px;
 	width: 35px;
-
 }
 
 .headerApp-nav{
@@ -693,7 +614,6 @@ button{
 	-webkit-box-pack: end;
 	-ms-flex-pack: end;
 	justify-content: flex-end;
-
 }
 
 .headerApp-nav .menu{
@@ -703,7 +623,6 @@ button{
 	display: flex;
 	list-style: none;
 	position: relative;
-
 }
 
 .headerApp-nav .menu .userMenu{
@@ -712,19 +631,16 @@ button{
 	background: white;
 	top: 45px;
 	display: none;
-
 }
 
 .headerApp-nav .menu .userMenu.active{
 	display: block;
-
 }
 
 .headerApp-nav .menu .userMenu-body{
 	border: 1px solid #888888;
 	position: relative;
 	padding:0;
-
 }
 
 .headerApp-nav .menu .userMenu-body:after{
@@ -734,7 +650,6 @@ button{
 	position: absolute;
 	bottom: 100%;
 	right: 10%;
-
 }
 
 .headerApp-nav .menu .userMenu-link{
@@ -746,18 +661,15 @@ button{
 	font-size: 12px;
 	-webkit-transition: background .3s;
 	transition: background .3s;
-
 }
 
 .headerApp-nav .menu .userMenu-link .icon{
 	margin-right: 5px;
-
 }
 
 .headerApp-nav .menu .userMenu-link:hover{
 	background: #0093E3;
 	color: white;
-
 }
 
 .headerApp-nav .menu .box-notif{
@@ -768,14 +680,12 @@ button{
 	background: white;
 	right: 10px;
 	top: 45px;
-
 }
 
 .headerApp-nav .menu .box-notif.active{
 	display: block;
 	-webkit-animation: 1s boxToggle ease;
 	animation: 1s boxToggle ease;
-
 }
 
 .headerApp-nav .menu .box-notif-content{
@@ -790,7 +700,6 @@ button{
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
-
 }
 
 .headerApp-nav .menu .box-notif-header{
@@ -809,7 +718,6 @@ button{
 	line-height: 30px;
 	min-height: 30px;
 	border-bottom: 1px solid #cccccc;
-
 }
 
 .headerApp-nav .menu .box-notif-header .btnNew{
@@ -821,7 +729,6 @@ button{
 	line-height: 20px;
 	border-radius: 15px;
 	font-size: 14px;
-
 }
 
 .headerApp-nav .menu .box-notif-body{
@@ -829,7 +736,6 @@ button{
 	-ms-flex-positive: 1;
 	flex-grow: 1;
 	overflow-y: scroll;
-
 }
 
 .headerApp-nav .menu .box-notif-footer{
@@ -837,7 +743,6 @@ button{
 	color: #888888;
 	line-height: 30px;
 	border-top: 1px solid #cccccc;
-
 }
 
 .headerApp-nav .menu .box-notif-footer a{
@@ -845,12 +750,10 @@ button{
 	font-weight: bold;
 	text-decoration: none;
 	font-size: 14px;
-
 }
 
 .headerApp-nav .menu .box-notif-footer a:hover{
 	color: #3498db;
-
 }
 
 .headerApp-nav .menu .box-notif-item{
@@ -863,17 +766,14 @@ button{
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-
 }
 
 .headerApp-nav .menu .box-notif-item:hover{
 	background: #f2f2f2;
-
 }
 
 .headerApp-nav .menu .box-notif-item.new{
 	background: #ecf0f1;
-
 }
 
 .headerApp-nav .menu .box-notif-item .user-photo{
@@ -885,7 +785,6 @@ button{
 	position: relative;
 	text-align: center;
 	overflow: hidden;
-
 }
 
 .headerApp-nav .menu .box-notif-item .user-photo .photo{
@@ -897,7 +796,6 @@ button{
 	height: 44px;
 	min-width: 44px;
 	min-height: 44px;
-
 }
 
 .headerApp-nav .menu .box-notif-item .user-photo .photo img{
@@ -905,7 +803,6 @@ button{
 	height: 44px;
 	-o-object-fit: cover;
 	object-fit: cover;
-
 }
 
 .headerApp-nav .menu .box-notif-item .user-photo.online:after{
@@ -918,7 +815,6 @@ button{
 	bottom: 2px;
 	right: 0px;
 	border: 2px solid white;
-
 }
 
 .headerApp-nav .menu .box-notif-item .notif-copy{
@@ -936,14 +832,12 @@ button{
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-
 }
 
 .headerApp-nav .menu .box-notif-item .notif-copy .user-name{
 	font-size: 12px;
 	color: #212121;
 	font-weight: bold;
-
 }
 
 .headerApp-nav .menu .box-notif-item .notif-copy .notif-text{
@@ -953,14 +847,12 @@ button{
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-
 }
 
 .headerApp-nav .menu .box-notif-item .notif-copy .notif-fotter{
 	font-size: 12px;
 	color: #888888;
 	font-weight: bold;
-
 }
 
 .headerApp-nav .menu .box-notif-item .notif-copy .notif-fotter .dislike,
@@ -978,43 +870,35 @@ button{
 	line-height: 20px;
 	margin-right: 5px;
 	display: inline-block;
-
 }
 
 .headerApp-nav .menu .box-notif-item .notif-copy .notif-fotter .dislike{
 	background: #c0392b;
-
 }
 
 .headerApp-nav .menu .box-notif-item .notif-copy .notif-fotter .follow{
 	background: #27ae60;
-
 }
 
 .headerApp-nav .menu .box-notif-item .notif-copy .notif-fotter .start{
 	background: #f39c12;
-
 }
 
 .headerApp-nav .menu .box-notif-item .notif-copy .notif-fotter .post{
 	background: #34495e;
-
 }
 
 .headerApp-nav .menu .btn{
 	height: 35px;
 	line-height: 35px;
-
 }
 
 .headerApp-nav .menu-item{
 	height: 35px;
-
 }
 
 .headerApp-nav .menu-item:last-child .menu-link{
 	border-right:none;
-
 }
 
 .headerApp-nav .menu-user{
@@ -1027,7 +911,6 @@ button{
 	align-items: center;
 	text-decoration: none;
 	color: white;
-
 }
 
 .headerApp-nav .menu-user .photo{
@@ -1038,7 +921,6 @@ button{
 	height: 31px;
 	border: 2px solid white;
 	overflow: hidden;
-
 }
 
 .headerApp-nav .menu-user .photo img{
@@ -1049,7 +931,6 @@ button{
 	border-radius: 50%;
 	-webkit-animation: .5s newNotif ease;
 	animation: .5s newNotif ease;
-
 }
 
 .headerApp-nav .menu-link{
@@ -1066,7 +947,6 @@ button{
 	position: relative;
 	-webkit-transition: 0.3s;
 	transition: 0.3s;
-
 }
 
 .headerApp-nav .menu-link.active:after{
@@ -1081,18 +961,15 @@ button{
 	border-right: 14px solid transparent;
 	border-left: 14px solid transparent;
 	border-bottom: 16px solid white;
-
 }
 
 .headerApp-nav .menu-link:hover{
 	background: rgba(0, 0, 0, .8);
-
 }
 
 .headerApp-nav .menu-link span.icon{
 	line-height: 35px;
 	font-size: 1.3em;
-
 }
 
 .headerApp-nav .menu-notif{
@@ -1109,7 +986,6 @@ button{
 	-webkit-transition: .3s;
 	transition: .3s;
 	display: none;
-
 }
 
 .headerApp-nav .menu-notif.new{
@@ -1117,7 +993,6 @@ button{
 	-webkit-animation: .5s newNotif ease;
 	animation: .5s newNotif ease;
 	box-shadow: 0 0 0 10px rgba(192, 57, 43, 0);
-
 }
 
 .box.active{}
@@ -1220,7 +1095,6 @@ button{
 	background: url('../img/pttr.png'), linear-gradient(to bottom, rgba(33, 33, 33, 0.3) 0%,rgba(33, 33, 33, 0.03) 50%,rgba(33, 33, 33, 0));
 	background-size: 5px;
 	z-index: 1;
-
 }
 
 .heroApp-wrapper{
@@ -1242,7 +1116,6 @@ button{
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-
 }
 
 .heroApp-copy{
@@ -1251,7 +1124,6 @@ button{
 	font-size: 4em;
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
 	font-weight: bold;
-
 }
 
 .heroApp-subCopy{
@@ -1259,21 +1131,18 @@ button{
 	text-align: center;
 	font-size: 2em;
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
-
 }
 
 .heroApp-subCopy .btn{
 	font-size: 1.2em;
 	height: 1.5em;
 	line-height: 1.5em;
-
 }
 
 .heroApp-subCopy .cut{
 	display: inline-block;
 	position: relative;
 	margin-bottom: 20px;
-
 }
 
 .heroApp-subCopy .cut:before,
@@ -1286,13 +1155,11 @@ button{
 	left: 200%;
 	top: 50%;
 	box-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
-
 }
 
 .heroApp-subCopy .cut:before{
 	right: 200%;
 	left: auto;
-
 }
 
 .heroApp-search{
@@ -1305,7 +1172,6 @@ button{
 	padding-bottom: 10px;
 	max-width: 900px;
 	margin: 50px 0;
-
 }
 
 .heroApp-search .input-search{
@@ -1317,12 +1183,10 @@ button{
 	color: white;
 	font-size: 2.4em;
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
-
 }
 
 .heroApp-search .input-search:focus{
 	outline: none;
-
 }
 
 .heroApp-search .button-search{
@@ -1330,5 +1194,4 @@ button{
 	color: white;
 	border: none;
 	font-size: 2em;
-
 }
